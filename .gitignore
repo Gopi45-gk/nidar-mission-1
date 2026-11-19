@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.cache
+
+# IDE and agent metadata
+.andromity/
+.cortex/
+.gemini/
+.idea/
+.vscode/
+
+# Ignore duplicate training splits (original data is in human_dataset/images and anno)
+human_dataset/images/train/
+human_dataset/images/val/
+human_dataset/labels/train/
+human_dataset/labels/val/
+
+# Ignore runs directory except essential results
+runs/
+human_dataset/runs/
+!human_dataset/runs/human_v2/weights/best.pt
+
+# Ignore large YOLO model weight files (>100MB blocks GitHub push)
+*.pt
+!human_dataset/runs/human_v2/weights/best.pt

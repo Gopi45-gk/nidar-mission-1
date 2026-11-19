@@ -1,6 +1,8 @@
+# Dataset configuration for NIDAR Mission 1
+path: ./human_dataset
+train: images/train
+val: images/val
+
+nc: 1
 names:
   0: human
-  1: unused
-  2: class_2
-train: C:/Users/gopik/OneDrive/Desktop/nidar mission 1/human_dataset/train.txt
-val: C:/Users/gopik/OneDrive/Desktop/nidar mission 1/human_dataset/val.txt
